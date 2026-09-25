@@ -227,14 +227,17 @@
         </div>
     </footer>
 
-    <div id="doctorProfile" class="hidden fixed bottom-5 left-5 z-[90] flex flex-col-reverse items-center gap-3">
+    <div id="doctorProfile" class="hidden fixed bottom-5 left-5 z-[90] flex flex-row items-center gap-2">
         <div class="relative inline-flex shrink-0">
-            <img id="docAvatar" src="https://placehold.co/100x100/0d9488/ffffff?text=Doctor" alt="Ảnh đại diện" class="w-11 h-11 rounded-full border-2 border-emerald-500 object-cover shadow-lg bg-white">
+            <img id="docAvatar" src="https://placehold.co/100x100/0d9488/ffffff?text=Doctor" alt="Ảnh đại diện" class="w-9 h-9 rounded-full border-2 border-emerald-500 object-cover shadow-lg bg-white">
             <span id="docAdminCrown" class="hidden absolute -right-1 -bottom-1 w-5 h-5 rounded-full bg-amber-400 text-amber-950 border-2 border-white items-center justify-center text-[9px] shadow" title="Admin" aria-label="Admin">
                 <i class="fa-solid fa-crown" aria-hidden="true"></i>
             </span>
         </div>
-        <button id="accountSettingsToggle" type="button" onclick="window.toggleAccountSettingsMenu()" aria-expanded="false" aria-controls="accountSettingsMenu" title="Cài đặt tài khoản" aria-label="Cài đặt tài khoản" class="w-10 h-10 rounded-full bg-slate-900/90 hover:bg-teal-800 text-slate-200 hover:text-white border border-slate-600 shadow-lg flex items-center justify-center transition">
+        <button id="btnUserMgmt" type="button" onclick="window.closeAccountSettingsMenu(); window.openUserManagementModal()" title="Quản lý thành viên" aria-label="Quản lý thành viên" class="hidden w-9 h-9 rounded-full bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-700 shadow-lg flex items-center justify-center transition">
+            <i class="fa-solid fa-users-gear text-sm" aria-hidden="true"></i>
+        </button>
+        <button id="accountSettingsToggle" type="button" onclick="window.toggleAccountSettingsMenu()" aria-expanded="false" aria-controls="accountSettingsMenu" title="Cài đặt tài khoản" aria-label="Cài đặt tài khoản" class="w-9 h-9 rounded-full bg-slate-900/90 hover:bg-teal-800 text-slate-200 hover:text-white border border-slate-600 shadow-lg flex items-center justify-center transition">
             <i class="fa-solid fa-gear" aria-hidden="true"></i>
         </button>
         <section id="accountSettingsMenu" class="hidden absolute left-0 bottom-[calc(100%+0.75rem)] w-80 max-w-[calc(100vw-2.5rem)] max-h-[78vh] overflow-y-auto custom-scrollbar bg-white rounded-2xl border border-slate-200 shadow-2xl p-4 space-y-3 text-xs">
@@ -251,20 +254,17 @@
                 <button type="button" onclick="window.saveProfessionalTitle()" class="w-full px-3 py-2 rounded-lg bg-teal-700 hover:bg-teal-800 text-white font-semibold transition">Lưu chức danh</button>
             </div>
             <div class="flex items-center justify-between gap-3 py-2 border-y border-slate-200">
-                <span class="font-semibold text-slate-700"><i class="fa-solid fa-circle-half-stroke mr-1.5 text-indigo-600"></i>Giao diện sáng / tối</span>
+                <span class="font-semibold text-slate-700">Giao diện sáng / tối</span>
                 <button id="themeToggleButton" type="button" onclick="window.toggleTheme()" title="Bật giao diện tối" aria-label="Bật giao diện tối" aria-pressed="false" class="inline-flex items-center shrink-0" role="switch">
                     <span class="theme-toggle-thumb"><i id="themeToggleIcon" class="fa-solid fa-sun" aria-hidden="true"></i></span>
                     <span class="sr-only">Đổi giao diện sáng/tối</span>
                 </button>
             </div>
             <button id="btnStats" type="button" onclick="window.closeAccountSettingsMenu(); window.openStatsModal()" class="hidden w-full px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-teal-50 border border-slate-200 text-slate-700 font-semibold text-left transition flex items-center gap-2">
-                <i class="fa-solid fa-chart-pie text-teal-700 w-4" aria-hidden="true"></i> Thống kê
-            </button>
-            <button id="btnUserMgmt" type="button" onclick="window.closeAccountSettingsMenu(); window.openUserManagementModal()" class="hidden w-full px-3 py-2.5 rounded-lg bg-slate-50 hover:bg-amber-50 border border-slate-200 text-slate-700 font-semibold text-left transition flex items-center gap-2">
-                <i class="fa-solid fa-users-gear text-amber-600 w-4" aria-hidden="true"></i> Quản lý thành viên
+                Thống kê
             </button>
             <button type="button" onclick="window.logoutGoogle()" class="w-full px-3 py-2.5 rounded-lg bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-700 font-semibold text-left transition flex items-center gap-2">
-                <i class="fa-solid fa-right-from-bracket w-4" aria-hidden="true"></i> Đăng xuất
+                Đăng xuất
             </button>
         </section>
     </div>
