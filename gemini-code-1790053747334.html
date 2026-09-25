@@ -93,7 +93,7 @@
             <i class="fa-solid fa-shield-halved text-amber-600 text-lg mt-0.5"></i>
             <div>
                 <p class="font-bold">Chế Độ Bảo Mật Thông Tin Bệnh Nhân (HIPAA/Bảo Mật Y Tế)</p>
-                <p id="noticeSubText" class="text-amber-700/90 mt-0.5">Danh sách bệnh nhân ẩn hoàn toàn khi màn hình chính. Vui lòng đăng nhập và chờ Admin phê duyệt tài khoản để tra cứu.</p>
+                <p id="noticeSubText" class="text-amber-700/90 mt-0.5">Danh sách bệnh nhân ẩn hoàn toàn khỏi màn hình chính. Vui lòng đăng nhập và chờ Admin phê duyệt tài khoản để tra cứu.</p>
             </div>
         </div>
 
@@ -204,7 +204,7 @@
                             <span class="font-bold text-slate-700 flex items-center gap-1.5 uppercase">
                                 <i class="fa-solid fa-id-card text-teal-600"></i> B. Thông Tin Hành Chính <span class="text-rose-500">*</span>
                             </span>
-                            <span id="adminEditNotice" class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200 font-medium hidden">Chế Độ Admin</span>
+                            <span id="adminEditNotice" class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200 font-medium hidden">Chế độ Admin</span>
                         </div>
 
                         <div id="adminInputFields" class="space-y-3">
@@ -373,7 +373,7 @@
                                         <option value="XELIRI-Bevacizumab">XELIRI + Bevacizumab (21 ngày)</option>
                                         <option value="Capecitabine-Bevacizumab">Capecitabine + Bevacizumab (21 ngày)</option>
                                         <option value="FOLFOXIRI">FOLFOXIRI / Cape-Oxa-Iri (21 ngày)</option>
-                                        <option value="Capecitabine-Mono">Capecitabine Đơn Trị (21 ngày)</option>
+                                        <option value="Capecitabine-Mono">Capecitabine đơn Trị (21 ngày)</option>
                                     </optgroup>
                                     <optgroup label="Nhánh ung thư Vú">
                                         <option value="EC">EC (Epirubicin + Cyclophosphamide - 21 ngày)</option>
@@ -382,10 +382,10 @@
                                         <option value="AC-T-Trastuzumab">AC-T + Trastuzumab (HER2 dương tính)</option>
                                         <option value="Vinorelbine-Capecitabine">Vinorelbine - Capecitabine (Ung thư vú)</option>
                                         <option value="Metronomic-Breast">Metronomic Ung Thư Vú</option>
-                                        <option value="Paclitaxel-Mono">Paclitaxel Đơn Trị</option>
-                                        <option value="Vinorelbine-Mono">Vinorelbine Đơn Trị</option>
+                                        <option value="Paclitaxel-Mono">Paclitaxel đơn Trị</option>
+                                        <option value="Vinorelbine-Mono">Vinorelbine đơn Trị</option>
                                     </optgroup>
-                                    <optgroup label="Phác Đồ Khác">
+                                    <optgroup label="Phác đồ Khác">
                                         <option value="CUSTOM">KHÁC (Tự nhập tên phác đồ)</option>
                                     </optgroup>
                                 </select>
@@ -644,7 +644,7 @@
                     </div>
                     <div class="bg-indigo-50 border border-indigo-200 p-4 rounded-xl flex items-center justify-between">
                         <div>
-                            <p class="text-indigo-700 font-semibold uppercase text-[10px]">Phân bổ Giới Tính</p>
+                            <p class="text-indigo-700 font-semibold uppercase text-[10px]">Phân bố Giới Tính</p>
                             <div id="statGenderSummary" class="text-xs font-bold text-indigo-900 mt-1 space-x-2">Nam: 0 | Nữ: 0</div>
                         </div>
                         <div class="w-10 h-10 bg-indigo-200/60 rounded-full flex items-center justify-center text-indigo-800 text-lg">
@@ -653,7 +653,7 @@
                     </div>
                     <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl flex items-center justify-between">
                         <div>
-                            <p class="text-amber-700 font-semibold uppercase text-[10px]">Phân bổ Nhóm Tuổi</p>
+                            <p class="text-amber-700 font-semibold uppercase text-[10px]">Phân bố Nhóm Tuổi</p>
                             <div id="statAgeSummary" class="text-[11px] font-bold text-amber-900 mt-1">Trẻ: 0 | Trung niên: 0 | Già: 0</div>
                         </div>
                         <div class="w-10 h-10 bg-amber-200/60 rounded-full flex items-center justify-center text-amber-800 text-lg">
@@ -663,7 +663,7 @@
                 </div>
 
                 <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center">
-                    <h4 class="font-bold text-slate-700 uppercase text-[11px] mb-3 self-start">TỶ LỆ PHÂN BỔ NHÓM BỆNH ICD CHÍNH:</h4>
+                    <h4 class="font-bold text-slate-700 uppercase text-[11px] mb-3 self-start">TỶ LỆ PHÂN BỐ NHÓM BỆNH ICD CHÍNH:</h4>
                     <div class="w-full max-w-xs h-64 relative flex justify-center">
                         <canvas id="statsPieChart"></canvas>
                     </div>
@@ -789,7 +789,7 @@
             { code: "C78.4", desc: "U ác thứ phát của ruột non" },
             { code: "C78.5", desc: "U ác thứ phát của ruột già và trực tràng" },
             { code: "C78.6", desc: "U ác thứ phát của phúc mạc và màng bụng sau" },
-            { code: "C78.7", desc: "U ác thứ phát của gan và đường mật trong gan" },
+            { code: "C78.7", desc: "U ác thứ phát của gan và ống mật trong gan" },
             { code: "C78.8", desc: "U ác thứ phát của các cơ quan tiêu hóa khác" },
             { code: "C79.0", desc: "U ác thứ phát của thận và bể thận" },
             { code: "C79.1", desc: "U ác thứ phát của bàng quang" },
@@ -888,11 +888,11 @@
             "XELIRI": { name: "XELIRI", drugs: "Irinotecan, Capecitabine", is14Days: true, formula: [ {drug: "Irinotecan", std: 200, unit: "mg/m2"}, {drug: "Capecitabine", std: 1000, unit: "mg/m2 bid"} ] },
             "XELIRI-Bevacizumab": { name: "XELIRI + Bevacizumab", drugs: "Bevacizumab, Irinotecan, Capecitabine", is14Days: true, formula: [ {drug: "Bevacizumab", std: 7.5, unit: "mg/kg"}, {drug: "Irinotecan", std: 200, unit: "mg/m2"}, {drug: "Capecitabine", std: 1000, unit: "mg/m2 bid"} ] },
             "Capecitabine-Bevacizumab": { name: "Capecitabine + Bevacizumab", drugs: "Bevacizumab, Capecitabine", is14Days: true, formula: [ {drug: "Bevacizumab", std: 7.5, unit: "mg/kg"}, {drug: "Capecitabine", std: 1000, unit: "mg/m2 bid"} ] },
-            "Capecitabine-Mono": { name: "Capecitabine Đơn Trị", drugs: "Capecitabine", is14Days: true, formula: [ {drug: "Capecitabine", std: 1250, unit: "mg/m2 bid"} ] },
+            "Capecitabine-Mono": { name: "Capecitabine đơn Trị", drugs: "Capecitabine", is14Days: true, formula: [ {drug: "Capecitabine", std: 1250, unit: "mg/m2 bid"} ] },
             "Vinorelbine-Capecitabine": { name: "Vinorelbine - Capecitabine", drugs: "Vinorelbine, Capecitabine", is14Days: true, formula: [ {drug: "Vinorelbine", std: 25, unit: "mg/m2"}, {drug: "Capecitabine", std: 1000, unit: "mg/m2 bid"} ] },
             "AC-T": { name: "AC-T (Anthracycline -> Taxane)", drugs: "Doxorubicin, Cyclophosphamide, Paclitaxel", is14Days: false, formula: [ {drug: "Doxorubicin", std: 60, unit: "mg/m2"}, {drug: "Cyclophosphamide", std: 600, unit: "mg/m2"}, {drug: "Paclitaxel", std: 175, unit: "mg/m2"} ] },
             "AC-T-Trastuzumab": { name: "AC-T + Trastuzumab", drugs: "Doxorubicin, Cyclophosphamide, Paclitaxel, Trastuzumab", is14Days: false, formula: [ {drug: "Doxorubicin", std: 60, unit: "mg/m2"}, {drug: "Cyclophosphamide", std: 600, unit: "mg/m2"}, {drug: "Paclitaxel", std: 175, unit: "mg/m2"}, {drug: "Trastuzumab", std: 6, unit: "mg/kg"} ] },
-            "Paclitaxel-Mono": { name: "Paclitaxel Đơn Trị", drugs: "Paclitaxel", is14Days: false, formula: [ {drug: "Paclitaxel", std: 175, unit: "mg/m2"} ] }
+            "Paclitaxel-Mono": { name: "Paclitaxel đơn Trị", drugs: "Paclitaxel", is14Days: false, formula: [ {drug: "Paclitaxel", std: 175, unit: "mg/m2"} ] }
         };
 
         window.onProtocolSelectChanged = function() {
@@ -1922,30 +1922,6 @@
             }
         };
 
-        // HÀM SỬA BỆNH NHÂN TỪ BẢNG THỐNG KÊ
-        window.editPatientFromStats = function(docId) {
-            window.closeStatsModal();
-            window.openEditPatientModal(docId);
-        };
-
-        // HÀM XÓA BỆNH NHÂN TỰ ĐỘNG LÀM MỚI BẢNG THỐNG KÊ
-        window.deletePatientFromStats = async function(docId) {
-            if (!isAdmin) {
-                alert("Chỉ tài khoản Admin mới có quyền xóa hồ sơ bệnh nhân!");
-                return;
-            }
-            if (confirm("CẢNH BÁO: Bạn có chắc chắn muốn xóa vĩnh viễn hồ sơ bệnh nhân này khỏi hệ thống?")) {
-                try {
-                    await deleteDoc(doc(db, "patients", docId));
-                    window.showToast("Đã xóa hồ sơ bệnh nhân thành công!");
-                    window.runChemoStatistics(); // Tải lại bảng thống kê sau khi xóa
-                } catch (err) {
-                    console.error("Lỗi xóa hồ sơ:", err);
-                    alert("Không thể xóa hồ sơ: " + err.message);
-                }
-            }
-        };
-
         window.runChemoStatistics = function() {
             const startDate = document.getElementById('statsStartDate').value;
             const endDate = document.getElementById('statsEndDate').value;
@@ -2000,10 +1976,8 @@
                         <td class="p-3"><strong class="text-teal-800">Chính:</strong> ${p.diagnosis || '-'}</td>
                         <td class="p-3 font-bold text-amber-800">${p.protocol || 'Chưa cập nhật'}</td>
                         <td class="p-3 text-center font-bold text-teal-700">${p.cycles ? p.cycles.length : 0} chu kỳ</td>
-                        <td class="p-3 text-center space-x-1">
-                            <button onclick="window.viewPatientDetail('${p.id}')" title="Xem chi tiết" class="p-1.5 bg-teal-50 hover:bg-teal-100 text-teal-700 rounded-lg"><i class="fa-solid fa-eye"></i></button>
-                            <button onclick="window.editPatientFromStats('${p.id}')" title="Sửa hồ sơ" class="p-1.5 bg-amber-50 hover:bg-amber-100 text-amber-700 rounded-lg"><i class="fa-solid fa-pen-to-square"></i></button>
-                            ${isAdmin ? `<button onclick="window.deletePatientFromStats('${p.id}')" title="Xóa bệnh nhân" class="p-1.5 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded-lg"><i class="fa-solid fa-trash"></i></button>` : ''}
+                        <td class="p-3 text-center">
+                            <button onclick="window.viewPatientDetail('${p.id}')" class="p-1.5 bg-teal-50 hover:bg-teal-100 text-teal-700 rounded-lg"><i class="fa-solid fa-eye"></i></button>
                         </td>
                     `;
                     tbody.appendChild(tr);
