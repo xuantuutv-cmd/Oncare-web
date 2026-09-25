@@ -27,7 +27,7 @@
 <body class="text-slate-800 antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-5 right-5 z-[100] hidden bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center space-x-3 border border-slate-700 transition-all transform duration-300">
+    <div id="toastNotification" class="fixed bottom-5 right-5 z-[100] hidden bg-slate-900/90 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center space-x-3 border border-slate-700 transition-all transform duration-300">
         <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
         <span id="toastMessage" class="text-xs font-semibold">Đã cập nhật thông tin thành công!</span>
     </div>
@@ -88,8 +88,8 @@
         <div id="accountStatusNotice" class="bg-amber-50 border border-amber-200/80 rounded-2xl p-4 flex items-start space-x-3 text-amber-900 text-xs shadow-sm">
             <i class="fa-solid fa-shield-halved text-amber-600 text-lg mt-0.5"></i>
             <div>
-                <p class="font-bold">Chế Độ Bảo Mật Thông Tin Bệnh Nhân (HIPAA/Bảo Mật Y Tế)</p>
-                <p id="noticeSubText" class="text-amber-700/90 mt-0.5">Danh sách bệnh nhân ẩn hoàn toàn khi màn hình chính. Vui lòng đăng nhập và chờ Admin phê duyệt tài khoản để tra cứu.</p>
+                <p class="font-bold">Chế độ Bảo Mật Thông Tin Bệnh Nhân (HIPAA/Bảo Mật Y Tế)</p>
+                <p id="noticeSubText" class="text-amber-700/90 mt-0.5">Danh sách bệnh nhân ẩn hoàn toàn khỏi màn hình chính. Vui lòng đăng nhập và chờ Admin phê duyệt tài khoản để tra cứu.</p>
             </div>
         </div>
 
@@ -181,7 +181,7 @@
                     </div>
                     <div>
                         <h3 id="patientFormModalTitle" class="font-bold text-sm tracking-wide uppercase">Cập Nhật Hồ Sơ Điều Trị & Lịch Sử Hóa Trị</h3>
-                        <p class="text-[10px] text-slate-400">HOSPITAL INFORMATION SYSTEM - Khoa Ung Bướu BVĐK An Giang</p>
+                        <p class="text-[10px] text-slate-400">HOSPITAL INFORMATION SYSTEM - Khoa Ung Bướu BVK An Giang</p>
                     </div>
                 </div>
                 <button onclick="window.closePatientFormModal()" class="text-slate-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
@@ -1331,7 +1331,7 @@
                     accountStatusNotice.classList.add('hidden');
                 } else if (isApproved || isVip) {
                     btnStats.classList.remove('hidden');    // Hiển thị nút Thống kê cho Doctor/VIP
-                    btnUserMgmt.classList.add('hidden');    // Ẩn Quản lý thành viên đối với User thường
+                    btnUserMgmt.classList.add('hidden');    // Ẩn Quản lý thành viên đối với User thông thường
                     accountStatusNotice.classList.add('hidden');
                 } else {
                     searchInput.disabled = true;
